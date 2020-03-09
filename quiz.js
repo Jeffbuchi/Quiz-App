@@ -74,8 +74,8 @@ function renderCounter() {
     } else {
         count = 0;
         answerIsWrong();
-        if (currentQuestion < lastQuestion) {
-            currentQuestion++;
+        if (runningQuestion < lastQuestion) {
+            runningQuestion++;
             renderQuestion;
         } else {
             clearInterval(TIMER);
